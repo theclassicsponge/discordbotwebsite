@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block extrahead%}
+<meta name="viewport" content="width=device-width"/>
+{% endblock %}
+
+{% block content %} 
+<script>
+    $(document).ready(function(){
+       $(window).scrollTop(0);
+   });
+   </script>
+<br>
+<div id="section1">
+<div class="penguin">
+<img src="static/pablo-logo.png" alt="pablo logo" width= "200" height="200">
+</div>
+<br>
+<div class="title">
+<h1>Pablo</h1>
+</div>
+<div class="intro">
+<p>
+A general purpose, server management bot. Pablo will help organise and moderate your server and add serveral utilites to users i.e find youtube videos, play music etc.
+</p>
+</div>
+</div>
+<div id="everything">
+<div id="section2">
+<h3>About Pablo</h3>
+<div class="about">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellendus! Ea iure modi totam iste illum ducimus nihil nesciunt autem deleniti minus, provident aliquid vel laboriosam tempora excepturi rerum odit!
+</p>
+</div>
+</div>
+<div id="section3">
+<h3>Add Pablo to Your Server</h3>
+<div class="add_button">
+    <button type="button" class="button1"><a href="/addbot"> Add Pablo</a></button>
+</div>
+<div>
+<br>
+
+</div>
+</div>
+<br>
+
+<h3>Need Help?</h3>
+<p>Join Our Support Server</p>
+<div class="join_support">
+<br>
+<button type="button" class="button2">Click to Join!</button>
+</div>
+</div>
+</div>
+<br>
+<style>
+    body {
+    background-color: #212529;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+.join_support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+}
+
+.add_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+}
+
+.everything {
+    animation-name: else;
+    animation-duration: 2s;
+}
+
+.intro {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    animation-name: front;
+    animation-duration: 4s;
+}
+
+.about {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
+
+.penguin {
+    text-align: center;
+    margin-bottom: 20px;
+    animation-name: peng;
+    animation-duration: 2s;
+}
+
+.title {
+    animation-name: name;
+    animation-duration: 3s;  
+}
+
+.button1 {
+    margin-top: 20px;
+  background-color: #212529;
+  color: white;
+  border: 5px solid rgb(11, 124, 230); /* Green */
+  border-radius: 25px;
+  height: 50px;
+  text-decoration: none;
+  color: inherit;
+}
+  
+
+.button1.hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.button2 {
+    margin-top: 20px;
+  background-color: #212529;
+  color: white;
+  border: 5px solid rgb(11, 124, 230); /* Green */
+  border-radius: 25px;
+  height: 50px;
+}
+
+#section1 {
+    padding-top: 10%;
+    height: 1000px;
+    width: 100%;
+    display: inline-block;
+}
+#section2 {
+    height: 400px;
+    width: 100%;
+    display: inline-block;
+}
+#section3 {
+    height: 400px;
+    width: 100%;
+    display: inline-block;
+}
+#section4 {
+    height: 400px;
+    width: 100%;
+    display: inline-block;
+}
+
+@keyframes peng {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes else {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes front {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes name {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+
+
+
+{% endblock %}
